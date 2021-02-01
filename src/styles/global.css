@@ -1,0 +1,38 @@
+html {
+  background-color: lavenderblush;
+}
+
+.the-parent-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px blue;
+}
+
+.info-container {
+  border: solid red 3px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.other-container {
+  border: solid red 2px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+@media (max-width: 800px) {
+  
+  html {
+    background-color: white;
+  }
+
+  .the-parent-container {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px blue;
+  }
+}
