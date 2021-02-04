@@ -1,13 +1,40 @@
-import React from "react"
+
+import React, { Component } from "react"
 import Header from "../components/Header"
-import MenuOpenSharpIcon from '@material-ui/icons/MenuOpenSharp';
+
+export default class Home extends Component {
+  constructor() {
+    super()
+    this.state = {
+      hideMenu: false
+    }
+    this.timerPointer = null
+    this.handleMouseMovement = this.handleMouseMovement.bind(this)
+  }
+  
+  componentDidMount() {
+    document.addEventListener("mousemove", this.handleMouseMovement)
+    this.handleTimer()
+  }
+
+  handleMouseMovement() {
+    clearTimeout(this.timerPointer)
+    this.setState({ hideMenu: false })
+    this.handleTimer()
+  }
+
+  handleTimer() {
+    this.timerPointer = setTimeout(() => {
+      this.setState({ hideMenu: true })
+    }, 2000)
+  }
 
 
-export default function Home() {
-  return (
-    <div>
-      {/* <MenuOpenSharpIcon style={{ fontSize: 70 }} className="menu-btn"/> */}
-      <Header />
-    </div>
-  )
+  render() {
+    return (
+      <div>
+        <Header hideMenu={this.state.hideMenu}/>
+      </div>
+    )
+  }
 }

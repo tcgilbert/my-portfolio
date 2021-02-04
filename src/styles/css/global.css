@@ -75,7 +75,8 @@ body {
   background-color: whitesmoke;
   padding: .3rem;
   border-radius: 100%;
-  transition: all .2s; }
+  transition: all .2s;
+  animation: fadeIn .5s ease-in; }
 
 .menu-btn:hover {
   cursor: pointer;
@@ -86,6 +87,18 @@ body {
   cursor: pointer;
   transform: translateY(0);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.hidden {
+  z-index: 1;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-size: 10rem;
+  background-color: whitesmoke;
+  padding: .3rem;
+  border-radius: 100%;
+  transition: all .2s;
+  animation: fadeOut .5s forwards; }
 
 @keyframes moveInLeft {
   0% {
@@ -106,3 +119,15 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
