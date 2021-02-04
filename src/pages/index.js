@@ -1,12 +1,13 @@
 import React from "react"
 import InfoContainer from "../components/InfoContainer"
-import OtherContainer from "../components/OtherContainer"
+import Navigation from "../components/Navigation"
+
 
 export default function Home() {
   return (
-    <div className="the-parent-container">
+    <div>
+      <Navigation />
       <InfoContainer />
-      <OtherContainer />
     </div>
   )
 }
