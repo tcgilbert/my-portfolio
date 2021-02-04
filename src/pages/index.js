@@ -1,12 +1,12 @@
 import React from "react"
 import Header from "../components/Header"
-import Navigation from "../components/Navigation"
+import MenuOpenSharpIcon from '@material-ui/icons/MenuOpenSharp';
 
 
 export default function Home() {
   return (
     <div>
-      <Navigation />
+      {/* <MenuOpenSharpIcon style={{ fontSize: 70 }} className="menu-btn"/> */}
       <Header />
     </div>
   )

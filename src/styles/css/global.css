@@ -14,8 +14,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
-  padding: 0 3rem;
-  background-color: whitesmoke; }
+  padding: 3rem;
+  background-color: #fff;
+  position: relative; }
 
 .header {
   height: 95vh;
@@ -51,7 +52,8 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  backface-visibility: hidden; }
 
 .title {
   letter-spacing: .5rem;
@@ -63,6 +65,27 @@ body {
   letter-spacing: .8rem;
   font-size: 4.5rem;
   animation: moveInRight 1s ease-out; }
+
+.menu-btn {
+  z-index: 1;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-size: 10rem;
+  background-color: whitesmoke;
+  padding: .3rem;
+  border-radius: 100%;
+  transition: all .2s; }
+
+.menu-btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.menu-btn:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 @keyframes moveInLeft {
   0% {
