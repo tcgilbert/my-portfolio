@@ -19,7 +19,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to bottom right, rgba(80, 106, 171, 0.82), rgba(13, 55, 164, 0.82)), url("../../../public/static/img/workspace.jpg");
+  background-image: linear-gradient(to bottom right, rgba(210, 35, 0, 0.89), rgba(13, 55, 164, 0.89)), url("../../../public/static/img/workspace.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -46,13 +46,40 @@ body {
 .title-container {
   color: white;
   text-transform: uppercase;
-  line-height: 1.2; }
+  line-height: 1.2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .title {
   letter-spacing: .5rem;
-  font-size: 5rem; }
+  font-size: 5.5rem;
+  font-weight: 300;
+  animation: moveInLeft 1s ease-out; }
 
 .subtitle {
-  letter-spacing: .2rem;
-  font-weight: 300;
-  font-size: 4.5rem; }
+  letter-spacing: .8rem;
+  font-size: 4.5rem;
+  animation: moveInRight 1s ease-out; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2.5rem); }
+  80% {
+    transform: translateX(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2.5rem); }
+  80% {
+    transform: translateX(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
