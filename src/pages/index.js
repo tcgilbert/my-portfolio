@@ -1,6 +1,7 @@
 
 import React, { Component } from "react"
 import Header from "../components/Header"
+import About from "../components/About"
 
 export default class Home extends Component {
   constructor() {
@@ -34,6 +35,7 @@ export default class Home extends Component {
     return (
       <div>
         <Header hideMenu={this.state.hideMenu}/>
+        <About />
       </div>
     )
   }
