@@ -1,18 +1,21 @@
-
 import React, { Component } from "react"
 import Header from "../components/Header"
 import About from "../components/About"
+import MenuOpenSharpIcon from "@material-ui/icons/MenuOpenSharp"
 
 export default class Home extends Component {
   constructor() {
     super()
     this.state = {
-      hideMenu: false,  
+      hideMenu: false,
+      menuHover: false,
     }
     this.timerPointer = null
     this.handleMouseMovement = this.handleMouseMovement.bind(this)
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+    this.handleMouseOut = this.handleMouseOut.bind(this)
   }
-  
+
   componentDidMount() {
     document.addEventListener("mousemove", this.handleMouseMovement)
     this.handleTimer()
@@ -30,11 +33,24 @@ export default class Home extends Component {
     }, 2000)
   }
 
+  handleMouseOver() {
+    this.setState({ menuHover: true })
+  }
+  
+  handleMouseOut() {
+    this.setState({ menuHover: false })
+  }
 
   render() {
     return (
       <div>
-        <Header hideMenu={this.state.hideMenu}/>
+        <MenuOpenSharpIcon
+          onMouseOver={this.handleMouseOver}
+          onMouseOut={this.handleMouseOut}
+          style={{ fontSize: 60 }}
+          className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}
+        />
+        <Header hideMenu={this.state.hideMenu} />
         <About />
       </div>
     )
