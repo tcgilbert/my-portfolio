@@ -51,6 +51,7 @@ export default class Home extends Component {
           className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}
         />
         <Header hideMenu={this.state.hideMenu} />
+        <div id="about-anchor"></div>
         <About />
       </div>
     )
