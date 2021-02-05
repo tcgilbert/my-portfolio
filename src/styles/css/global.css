@@ -8,7 +8,8 @@
 
 html {
   font-size: 62.5%;
-  background-color: #fff; }
+  background-color: #fff;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -73,9 +74,9 @@ body {
   top: 5rem;
   right: 5rem;
   font-size: 10rem;
-  background-color: whitesmoke;
+  background-color: #4848c1;
   padding: .3rem;
-  border-radius: 100%;
+  border-radius: 40%;
   border: solid 1px black;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transition: all .2s;
@@ -97,11 +98,22 @@ body {
   top: 5rem;
   right: 5rem;
   font-size: 10rem;
-  background-color: whitesmoke;
+  background-color: #4848c1;
   padding: .3rem;
-  border-radius: 100%;
+  border-radius: 40%;
   transition: all .2s;
   animation: fadeOut .5s forwards; }
+
+.arrow-btn {
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  animation: oscilate 3s infinite linear; }
+
+.arrow-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.091);
+  border-radius: 100%; }
 
 .profile-pic {
   width: 350px; }
@@ -140,3 +152,11 @@ body {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+@keyframes oscilate {
+  0% {
+    transform: translate(0); }
+  50% {
+    transform: translateY(1rem); }
+  100% {
+    transform: translate(0); } }

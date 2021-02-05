@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Header from "../components/Header"
 import About from "../components/About"
-import MenuOpenSharpIcon from "@material-ui/icons/MenuOpenSharp"
+import MenuIcon from "@material-ui/icons/Menu"
 
 export default class Home extends Component {
   constructor() {
@@ -44,10 +44,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <MenuOpenSharpIcon
+        <MenuIcon
           onMouseOver={this.handleMouseOver}
           onMouseOut={this.handleMouseOut}
-          style={{ fontSize: 60 }}
+          style={{ fontSize: 55, color:"white" }}
           className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}
         />
         <Header hideMenu={this.state.hideMenu} />
