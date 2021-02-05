@@ -6,7 +6,7 @@ export default class Home extends Component {
   constructor() {
     super()
     this.state = {
-      hideMenu: false
+      hideMenu: false,  
     }
     this.timerPointer = null
     this.handleMouseMovement = this.handleMouseMovement.bind(this)
