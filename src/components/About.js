@@ -4,12 +4,19 @@ import ProfilePic from '../../public/static/img/circle-cropped.png'
 const About = () => {
     return (
         <div className="about-container">
-            <div className="empty-div"></div>
+            <div className="triangle-div"></div>
             <div className="about-content" >
-                <img  src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
-                <div class="about-text">
-                    <h1>Hey, I'm Thomas</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis nisi quisquam molestias! Et quae ad optio, consequatur sint repellendus assumenda, dignissimos eveniet, a unde saepe adipisci amet corporis nemo.</p>
+                <img data-sal-duration="3s" data-sal="slide-right" src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
+                <div class="about-text-container">
+                    <div data-sal-duration="3s" data-sal="slide-left">
+                        <h1 className="about-header">I'm a full-stack developer who finds enjoyment in all things creative.</h1>
+                        <hr className="about-hr"/>
+                        <p className="about-text">My favorite moment is when what feels like hours wasted culminates into something new and original. Fortunately, these moments are plentiful in the world of programming.</p>
+                        <p className="about-text">After having spent the year of 2020 as a full-time learner, I am actively seeking employment as of Feburary 2021. When I am not coding, you can find me either playing music (mostly bluegrass), or spending time outside in the sun.</p>
+                    </div>
+                </div>
+                <div className="skills-container">
+                    <h1>Front End</h1>
                 </div>
             </div>
         </div>
@@ -18,11 +25,3 @@ const About = () => {
 
 export default About
 
-// with animation
-        // <div className="about-section" >
-        //     <img data-sal-duration="1s" data-sal="slide-right" id="about-anchor" src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
-        //     <div data-sal-duration="1s" data-sal="slide-left" class="about-text">
-        //         <h1>Hey, I'm Thomas</h1>
-        //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis nisi quisquam molestias! Et quae ad optio, consequatur sint repellendus assumenda, dignissimos eveniet, a unde saepe adipisci amet corporis nemo.</p>
-        //     </div>
-        // </div>
