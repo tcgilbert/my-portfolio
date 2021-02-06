@@ -46,6 +46,7 @@ const About = () => {
                     <div className="skill-category">
                         <h1 className="skill-title">Design Tools</h1>
                         <p className="skill-text">Figma</p>
+                        <p className="skill-text">Adobe Photoshop</p>
                         <p className="skill-text">DBDesigner</p>
                     </div>
                 </div>

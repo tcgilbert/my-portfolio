@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Header from "../components/Header"
 import About from "../components/About"
+import Projects from "../components/Projects"
 import MenuIcon from "@material-ui/icons/Menu"
 
 export default class Home extends Component {
@@ -53,6 +54,7 @@ export default class Home extends Component {
         <Header hideMenu={this.state.hideMenu} />
         <div id="about-anchor"></div>
         <About />
+        <Projects />
       </div>
     )
   }

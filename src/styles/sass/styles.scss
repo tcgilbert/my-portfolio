@@ -100,7 +100,7 @@ body {
   border-radius: 40%;
   border: solid 0.25rem black;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s;
+  transition: all 3s ease-in-out;
   animation: fadeIn 0.2s ease-in;
 }
 
@@ -142,7 +142,7 @@ body {
 
 .about-container {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
 .triangle-div {
@@ -160,7 +160,7 @@ body {
 }
 
 .about-content {
-  width: 65%;
+  width: 70%;
   margin: 8rem auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -226,6 +226,75 @@ body {
 .about-text {
   font-size: 1.7rem;
   margin-top: 1.5rem;
+}
+
+.projects-section {
+  height: 50vh;
+}
+
+.projects-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "heading heading heading" "project1 project2 project3";
+  column-gap: 2rem;
+}
+
+.projects-heading {
+  grid-area: heading;
+}
+
+.think-ewe {
+  grid-area: project2;
+  text-align: center;
+  color: rgb(53, 53, 53);
+  z-index: 1;
+  padding: 6rem;
+  border-radius: .5rem;
+  background-image: url("../../../public/static/img/sheep.jpg");
+  background-size: cover;
+  background-position: 0% -140%;
+}
+
+.kaleidoscope {
+  grid-area: project1;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  padding: 6rem;
+  border-radius: .5rem;
+  background-color: rgba(13, 255, 0, 0.666);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("../../../public/static/img/kscope.jpg");
+  background-size: cover;
+}
+
+.rocket-sauce {
+  grid-area: project3;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 6rem;
+  border-radius: .5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ),url("../../../public/static/img/rocket-sauce2.png");
+  background-size: cover;
+}
+
+.project-title {
+  font-size: 4rem;
+}
+
+.project-text {
+  font-size: 1.5rem;
 }
 
 @keyframes moveInLeft {
