@@ -6,9 +6,9 @@ const About = () => {
         <div className="about-container">
             <div className="triangle-div"></div>
             <div className="about-content" >
-                <img data-sal-duration="3s" data-sal="slide-right" src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
+                <img data-sal-duration="700" data-sal="slide-right" src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
                 <div class="about-text-container">
-                    <div data-sal-duration="3s" data-sal="slide-left">
+                    <div data-sal-duration="700" data-sal="slide-left">
                         <h1 className="about-header">I'm a full-stack developer who finds enjoyment in all things creative.</h1>
                         <hr className="about-hr"/>
                         <p className="about-text">My favorite moment is when what feels like hours wasted culminates into something new and original. Fortunately, these moments are plentiful in the world of programming.</p>
@@ -16,7 +16,38 @@ const About = () => {
                     </div>
                 </div>
                 <div className="skills-container">
-                    <h1>Front End</h1>
+                    <div className="skill-category">
+                        <h1 className="skill-title">Front End</h1>
+                        <p className="skill-text">HTML</p>
+                        <p className="skill-text">CSS / SCSS</p>
+                        <p className="skill-text">Javascript</p>
+                        <p className="skill-text">React.js</p>
+                        <p className="skill-text">Gatsby.js</p>
+                    </div>
+                    <div className="skill-category">
+                        <h1 className="skill-title">Back End</h1>
+                        <p className="skill-text">Node.js</p>
+                        <p className="skill-text">Express.js</p>
+                        <p className="skill-text">PostgreSQL</p>
+                        <p className="skill-text">MongoDB</p>
+                        <p className="skill-text">Python</p>
+                    </div>
+                    <div className="skill-category">
+                        <h1 className="skill-title">Version Control</h1>
+                        <p className="skill-text">Git</p>
+                        <p className="skill-text">Github</p>
+                    </div>
+                    <div className="skill-category">
+                        <h1 className="skill-title">Test & Deployment</h1>
+                        <p className="skill-text">Mocha / Jest</p>
+                        <p className="skill-text">Heroku</p>
+                        <p className="skill-text">Netlify</p>
+                    </div>
+                    <div className="skill-category">
+                        <h1 className="skill-title">Design Tools</h1>
+                        <p className="skill-text">Figma</p>
+                        <p className="skill-text">DBDesigner</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -154,19 +154,20 @@ body {
   background-image: linear-gradient(
     to bottom right,
     rgb(0, 179, 210),
-    rgb(51, 13, 164)
+    rgba(51, 13, 164, 0.632)
   );
   clip-path: polygon(0 50%, 100% 100%, 100% 0);
 }
 
 .about-content {
-  z-index: 1;
   width: 65%;
   margin: 8rem auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: auto;
   grid-template-areas: "picture aboutText" "skills skills";
+  column-gap: 2rem;
+  z-index: 1;
 }
 
 .profile-pic {
@@ -177,14 +178,37 @@ body {
   margin-right: 0rem;
   box-shadow: 0px 0px 1.5rem 0.1rem rgba(0, 0, 0, 0.221);
   border-radius: 100%;
+  z-index: 1;
 }
 
 .about-text-container {
   grid-area: aboutText;
+  z-index: 1;
 }
 
 .skills-container {
   grid-area: skills;
+  z-index: 2;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-category {
+  text-align: center;
+  width: 22rem;
+  margin-top: 2rem;
+
+}
+
+.skill-text {
+  font-size: 1.5rem;
+}
+
+.skill-title {
+  text-transform: uppercase;
 }
 .about-hr {
   height: 0.4rem;
