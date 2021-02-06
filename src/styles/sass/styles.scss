@@ -234,7 +234,7 @@ body {
 
 .projects-container {
   width: 85%;
-  margin: 0 auto;
+  margin: 8rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -244,21 +244,40 @@ body {
 
 .projects-heading {
   grid-area: heading;
+  font-size: 3rem;
 }
 
 .think-ewe {
+  margin-top: 2rem;
   grid-area: project2;
   text-align: center;
   color: rgb(53, 53, 53);
   z-index: 1;
   padding: 6rem;
   border-radius: .5rem;
-  background-image: url("../../../public/static/img/sheep.jpg");
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(223, 223, 223, .4),
+    rgba(255, 255, 255, .4)
+  ), url("../../../public/static/img/sheep.jpg");
   background-size: cover;
-  background-position: 0% -140%;
+  background-position: top;
+}
+
+.think-ewe:hover {
+  cursor: pointer;
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
+}
+
+.think-ewe:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .kaleidoscope {
+  margin-top: 2rem;
   grid-area: project1;
   text-align: center;
   color: #fff;
@@ -274,7 +293,22 @@ body {
   background-size: cover;
 }
 
+
+.kaleidoscope:hover {
+  cursor: pointer;
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
+}
+
+.kaleidoscope:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
 .rocket-sauce {
+  margin-top: 2rem;
   grid-area: project3;
   color: white;
   text-align: center;
@@ -287,6 +321,18 @@ body {
     rgba(0, 0, 0, 0.2)
   ),url("../../../public/static/img/rocket-sauce2.png");
   background-size: cover;
+}
+
+.rocket-sauce:hover {
+  cursor: pointer;
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
+}
+
+.rocket-sauce:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
