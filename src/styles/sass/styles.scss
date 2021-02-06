@@ -343,6 +343,23 @@ body {
   font-size: 1.5rem;
 }
 
+.footer {
+  height: 40vh;
+  margin-top: 5rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(0, 179, 210),
+    rgb(51, 13, 164)
+  );
+  text-align: center;
+}
+
+.footer-title {
+  color: #fff;
+  padding-top: 4rem;
+  font-size: 3rem;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;

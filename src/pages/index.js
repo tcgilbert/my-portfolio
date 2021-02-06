@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Header from "../components/Header"
 import About from "../components/About"
 import Projects from "../components/Projects"
+import Footer from "../components/Footer"
 import MenuIcon from "@material-ui/icons/Menu"
 
 export default class Home extends Component {
@@ -55,6 +56,7 @@ export default class Home extends Component {
         <div id="about-anchor"></div>
         <About />
         <Projects />
+        <Footer />
       </div>
     )
   }
