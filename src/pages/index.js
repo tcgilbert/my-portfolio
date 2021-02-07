@@ -46,14 +46,25 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div>
-          <div className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}>
-            <MenuIcon
-              onMouseOver={this.handleMouseOver}
-              onMouseOut={this.handleMouseOut}
-              style={{ fontSize: 55, color:"black" }}
-            />
-          </div>
+        <div className="navigation">
+
+          <input type="checkbox" className="navigation__checkbox" id="navi-toggle"/>
+
+          <label htmlFor="navi-toggle" className="menu-btn">
+            X
+          </label>
+
+          <div className="navigation__background"></div>
+
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item"><a href="#" className="navigation__link">About</a></li>
+              <li className="navigation__item"><a href="#" className="navigation__link">Projects</a></li>
+              <li className="navigation__item"><a href="#" className="navigation__link">Contact</a></li>
+              <li className="navigation__item"><a href="#" className="navigation__link">Resume</a></li>
+            </ul>
+          </nav>
+
         </div>
         <Header/>
         <div id="about-anchor"></div>
@@ -64,3 +75,11 @@ export default class Home extends Component {
     )
   }
 }
+
+
+{/* <label htmlFor="navi-toggle" className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}></label> */}
+            {/* <MenuIcon
+              onMouseOver={this.handleMouseOver}
+              onMouseOut={this.handleMouseOut}
+              style={{ fontSize: 55, color:"black" }}
+            /> */}

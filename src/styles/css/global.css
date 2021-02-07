@@ -69,27 +69,6 @@ body {
   font-size: 4.5rem;
   animation: moveInRight 1s ease-out; }
 
-.menu-btn {
-  z-index: 1;
-  position: fixed;
-  top: 5rem;
-  right: 5rem;
-  transition: all .1s;
-  border: solid 0.25rem black;
-  border-radius: 40%;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.2s ease-in; }
-
-.menu-btn:hover {
-  cursor: pointer;
-  transform: translateY(-0.1rem);
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23); }
-
-.menu-btn:active {
-  cursor: pointer;
-  transform: translateY(0);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
 .hidden {
   z-index: 1;
   position: fixed;
@@ -103,7 +82,7 @@ body {
 .arrow-btn {
   margin-top: 7rem;
   animation: oscilate 3s infinite linear;
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .arrow-btn:hover {
   cursor: pointer;
@@ -205,7 +184,7 @@ body {
   color: #353535;
   z-index: 1;
   padding: 6rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-image: linear-gradient(to bottom right, rgba(223, 223, 223, 0.4), rgba(255, 255, 255, 0.4)), url("../../../public/static/img/sheep2.png");
   background-size: cover;
   background-position: top; }
@@ -227,7 +206,7 @@ body {
   color: #fff;
   z-index: 1;
   padding: 6rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: rgba(13, 255, 0, 0.666);
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../../public/static/img/rainbow.jpg");
   background-size: cover;
@@ -250,7 +229,7 @@ body {
   text-align: center;
   z-index: 1;
   padding: 6rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../public/static/img/rocket-sauce2.png");
   background-size: cover; }
 
@@ -299,7 +278,74 @@ body {
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  margin-left: .5rem; }
+  margin-left: 0.5rem; }
+
+.menu-btn {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  border-radius: 100%;
+  transition: all 0.1s;
+  border: solid 0.25rem black;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease-in;
+  background-color: #fff;
+  z-index: 15; }
+
+.menu-btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23); }
+
+.menu-btn:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.navigation__background {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  border-radius: 100%;
+  background-image: radial-gradient(rgba(0, 210, 32, 0.726), rgba(51, 13, 164, 0.927));
+  z-index: 10;
+  transition: all 0.2s; }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  width: 0;
+  transition: all .2s; }
+
+.navigation__list {
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation__link {
+  color: #fff;
+  font-size: 3.5rem;
+  text-decoration: none; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(100); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1; }
+
+.navigation__checkbox {
+  display: none; }
 
 @keyframes moveInLeft {
   0% {
