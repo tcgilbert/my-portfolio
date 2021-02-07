@@ -33,21 +33,18 @@ const About = () => {
                         <p className="skill-text">Python</p>
                     </div>
                     <div className="skill-category">
-                        <h1 className="skill-title">Version Control</h1>
-                        <p className="skill-text">Git</p>
+                        <h1 className="skill-title">Tools</h1>
+                        <p className="skill-text">Adobe Photoshop</p>
+                        <p className="skill-text">DBDesigner</p>
+                        <p className="skill-text">Figma</p>
                         <p className="skill-text">Github</p>
+                        <p className="skill-text">Git</p>
                     </div>
                     <div className="skill-category">
                         <h1 className="skill-title">Test & Deployment</h1>
                         <p className="skill-text">Mocha / Jest</p>
                         <p className="skill-text">Heroku</p>
                         <p className="skill-text">Netlify</p>
-                    </div>
-                    <div className="skill-category">
-                        <h1 className="skill-title">Design Tools</h1>
-                        <p className="skill-text">Figma</p>
-                        <p className="skill-text">Adobe Photoshop</p>
-                        <p className="skill-text">DBDesigner</p>
                     </div>
                 </div>
             </div>
