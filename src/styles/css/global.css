@@ -338,3 +338,24 @@ body {
     transform: translateY(1rem); }
   100% {
     transform: translate(0); } }
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 59%; } }
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 57%; } }
+
+@media (max-width: 1270px) {
+  .project-title {
+    font-size: 3rem; }
+  .project-text {
+    font-size: 1.5rem; }
+  .about-content {
+    width: 80%; } }
+
+@media (max-width: 1070px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column; } }
