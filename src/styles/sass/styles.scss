@@ -425,7 +425,7 @@ body {
   }
 
   &__checkbox:checked ~ &__background {
-    transform: scale(100);
+    transform: scale(80);
   }
 
   &__checkbox:checked ~ &__nav {

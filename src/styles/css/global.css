@@ -338,7 +338,7 @@ body {
   text-decoration: none; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(100); }
+  transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
