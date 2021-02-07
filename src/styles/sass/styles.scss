@@ -138,14 +138,14 @@ body {
 
 .about-container {
   position: relative;
-  height: 70vh;
+  height: auto;
 }
 
 .triangle-div {
   height: 90rem;
-  width: 60rem;
+  width: 40rem;
   position: absolute;
-  top: 19rem;
+  top: 10rem;
   right: 0;
   background-image: linear-gradient(
     to bottom right,
@@ -163,7 +163,6 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "picture aboutText" "skills skills";
   column-gap: 2rem;
-  z-index: 1;
 }
 
 .profile-pic {
@@ -225,7 +224,7 @@ body {
 }
 
 .projects-section {
-  height: 50vh;
+  height: auto;
 }
 
 .projects-container {
@@ -342,7 +341,7 @@ body {
 
 .footer {
   height: 30vh;
-  margin-top: 5rem;
+  margin-top: 8rem;
   background-image: linear-gradient(
     to top right,
     rgb(0, 179, 210),

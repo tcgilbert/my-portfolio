@@ -18,7 +18,7 @@ const Projects = () => {
                 </div>
                 <div className="rocket-sauce" data-sal-duration="700" data-sal="slide-up">
                     <h1 className="project-title">Rocket Sauce</h1>
-                    <p className="project-text">Vanilla JS | HTML5 Canvas | Adobe Photoshop</p>
+                    <p className="project-text">Vanilla JS | HTML5 Canvas | Adobe PS</p>
                 </div>
             </div>
         </div>
