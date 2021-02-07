@@ -46,13 +46,14 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <MenuIcon
-          onMouseOver={this.handleMouseOver}
-          onMouseOut={this.handleMouseOut}
-          style={{ fontSize: 55, color:"black" }}
-          className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}
-        />
-        <Header hideMenu={this.state.hideMenu} />
+        <div className={this.state.hideMenu && !this.state.menuHover ? "hidden" : "menu-btn"}>
+          <MenuIcon
+            onMouseOver={this.handleMouseOver}
+            onMouseOut={this.handleMouseOut}
+            style={{ fontSize: 55, color:"black" }}
+          />
+        </div>
+        <Header/>
         <div id="about-anchor"></div>
         <About />
         <Projects />

@@ -94,13 +94,10 @@ body {
   position: fixed;
   top: 5rem;
   right: 5rem;
-  font-size: 10rem;
-  // background-color: rgb(72, 72, 193);
-  padding: 0.3rem;
-  border-radius: 40%;
+  transition: all .1s;
   border: solid 0.25rem black;
+  border-radius: 40%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  transition: all 3s ease-in-out;
   animation: fadeIn 0.2s ease-in;
 }
 
@@ -121,8 +118,6 @@ body {
   position: fixed;
   top: 5rem;
   right: 5rem;
-  font-size: 10rem;
-  padding: 0.3rem;
   border: solid 0.25rem black;
   border-radius: 40%;
   transition: all 0.2s;
@@ -132,6 +127,7 @@ body {
 .arrow-btn {
   margin-top: 7rem;
   animation: oscilate 3s infinite linear;
+  transition: all .3s;
 }
 
 .arrow-btn:hover {
@@ -287,10 +283,11 @@ body {
   background-color: rgba(13, 255, 0, 0.666);
   background-image: linear-gradient(
     to bottom right,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("../../../public/static/img/kscope.jpg");
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
+  ), url("../../../public/static/img/rainbow.jpg");
   background-size: cover;
+  background-position: bottom;
 }
 
 
@@ -344,7 +341,7 @@ body {
 }
 
 .footer {
-  height: 40vh;
+  height: 30vh;
   margin-top: 5rem;
   background-image: linear-gradient(
     to top right,
@@ -358,6 +355,28 @@ body {
   color: #fff;
   padding-top: 4rem;
   font-size: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 5rem auto;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.contact-link {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-left: .5rem;
 }
 
 @keyframes moveInLeft {

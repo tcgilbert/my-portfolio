@@ -6,7 +6,7 @@ const About = () => {
         <div className="about-container">
             <div className="triangle-div"></div>
             <div className="about-content" >
-                <img data-sal-duration="700" data-sal="slide-right" src={ProfilePic} alt="Profile Picture" className="profile-pic"/>
+                <img data-sal-duration="700" data-sal="slide-right" src={ProfilePic} alt="Profile Pic" className="profile-pic"/>
                 <div class="about-text-container">
                     <div data-sal-duration="700" data-sal="slide-left">
                         <h1 className="about-header">I'm a full-stack developer who finds enjoyment in all things creative.</h1>
