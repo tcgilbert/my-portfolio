@@ -17,7 +17,8 @@
   }
 
   &__img {
-      margin-right: 3rem;
+      border-radius: 1rem;
+    margin-right: 3rem;
     height: 50rem;
     width: 60rem;
     transform: perspective(60rem) rotateY(2deg);
@@ -44,3 +45,4 @@
       text-decoration: underline;
   }
 }
+

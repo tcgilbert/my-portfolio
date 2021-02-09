@@ -27,7 +27,7 @@ const kaleidoscope = () => {
             </p>
             <p className="project__text">
               <span className="project__subsection">Technologies: </span>
-              React.js, Node, Express.js, MongoDB, SCSS
+              React.js, Node, Express.js, MongoDB, Mongoose, SCSS
             </p>
             <p className="project__text">
               <span className="project__subsection">3rd Party API's: </span>
