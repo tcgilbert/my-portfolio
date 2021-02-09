@@ -37,3 +37,23 @@
     text-decoration: none;
     margin-left: 0.5rem;
   }
+
+  .footer-abbrev {
+    height: auto;
+    margin-top: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(0, 179, 210),
+      rgb(51, 13, 164)
+    );
+    text-align: center;
+  }
+
+  .contact-info-abbrev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+    padding: 5rem 0;
+  }

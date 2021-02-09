@@ -8,11 +8,8 @@ import Pdf from '../assests/img/resume.pdf'
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div>
-          <h1 className="footer-title">Let's get in touch.</h1>
-      </div>
-      <div id="contact" className="contact-info">
+    <div className="footer-abbrev">
+      <div id="contact" className="contact-info-abbrev">
           <div className="icon-text">
             <MailOutlineIcon style={{ fontSize:"3rem" }}/>
             <a className="contact-link" href="mailto:tcgilbert94@gmail.com?subject=Via personal website" target="_blank">tcgilbert94@gmail.com</a>

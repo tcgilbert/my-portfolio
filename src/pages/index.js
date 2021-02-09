@@ -47,6 +47,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <div id="top"></div>
         <Navigation />
         <Header/>
         <div id="about-anchor"></div>

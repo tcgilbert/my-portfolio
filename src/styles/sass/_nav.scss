@@ -1,15 +1,15 @@
 .navigation {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0rem;
   z-index: 2000;
   width: 100%;
-  background-color: white;
-  padding: 1rem 4rem;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 0.1rem 0.5rem 0.05rem rgba(0, 0, 0, 0.221);
+  padding: 0.3rem 4rem;
 
   &__checkbox {
     display: none;
@@ -27,6 +27,17 @@
     display: flex;
   }
 
+  &__initials {
+    color: rgb(81, 55, 250);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  &__initials:hover {
+    cursor: pointer;
+  }
+
   &__list {
     display: flex;
     flex-direction: row;
@@ -36,18 +47,31 @@
   }
 
   &__item {
-    margin-right: 1rem;
+    margin-left: 3rem;
     text-decoration: none;
   }
 
   &__link {
     text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: lowercase;
   }
 }
 
+#resume-link:hover #arrow-resume {
+  position: relative;
+  top: -0.3rem;
+  right: -0.3rem;
+}
 
-
-
+#arrow-resume {
+  color: red;
+  font-size: 1.5rem;
+  transition: all 3s;
+  transform: rotate(180deg);
+}
 
 // .navigation {
 //   display: flex;

@@ -5,11 +5,12 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0rem;
   z-index: 2000;
   width: 100%;
-  background-color: white;
-  padding: 1rem 4rem; }
+  background-color: #f4f4f4;
+  box-shadow: 0px 0.1rem 0.5rem 0.05rem rgba(0, 0, 0, 0.221);
+  padding: 0.3rem 4rem; }
   .navigation__checkbox {
     display: none; }
   .navigation__menu-btn {
@@ -18,6 +19,13 @@
     display: none; }
   .navigation__nav {
     display: flex; }
+  .navigation__initials {
+    color: #5137fa;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none; }
+  .navigation__initials:hover {
+    cursor: pointer; }
   .navigation__list {
     display: flex;
     flex-direction: row;
@@ -25,10 +33,25 @@
     list-style: none;
     align-items: center; }
   .navigation__item {
-    margin-right: 1rem;
+    margin-left: 3rem;
     text-decoration: none; }
   .navigation__link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: lowercase; }
+
+#resume-link:hover #arrow-resume {
+  position: relative;
+  top: -0.3rem;
+  right: -0.3rem; }
+
+#arrow-resume {
+  color: red;
+  font-size: 1.5rem;
+  transition: all 3s;
+  transform: rotate(180deg); }
 
 @keyframes moveInLeft {
   0% {
@@ -303,6 +326,50 @@
   color: white;
   text-decoration: none;
   margin-left: 0.5rem; }
+
+.footer-abbrev {
+  height: auto;
+  margin-top: 15rem;
+  background-image: linear-gradient(to top right, #00b3d2, #330da4);
+  text-align: center; }
+
+.contact-info-abbrev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  margin: auto;
+  padding: 5rem 0; }
+
+.project {
+  padding: 8rem 3rem 0; }
+  .project__container {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5; }
+  .project__title {
+    font-size: 3rem; }
+  .project__subtitle {
+    font-weight: 400;
+    margin-bottom: 1rem; }
+  .project__img {
+    margin-right: 3rem;
+    height: 50rem;
+    width: 60rem;
+    transform: perspective(60rem) rotateY(2deg);
+    box-shadow: -1rem 0.5rem 1.5rem 0.1rem rgba(0, 0, 0, 0.221); }
+  .project__subsection {
+    font-size: 2rem;
+    font-weight: 600; }
+  .project__text {
+    font-size: 1.8rem;
+    margin-top: 1rem; }
+  .project__link {
+    text-decoration: none;
+    font-weight: 600;
+    color: royalblue; }
+  .project__link:hover {
+    text-decoration: underline; }
 
 *,
 *::before,
