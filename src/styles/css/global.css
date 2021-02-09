@@ -311,7 +311,7 @@ body {
   top: 5rem;
   right: 5rem;
   border-radius: 100%;
-  background-image: radial-gradient(rgba(0, 210, 32, 0.726), rgba(51, 13, 164, 0.927));
+  background-image: radial-gradient(#00d220, #330da4);
   z-index: 10;
   transition: all 0.2s; }
 
