@@ -15,8 +15,8 @@
     "compile-sass": "node-sass ./src/styles/sass/styles.scss ./src/styles/css/global.css -w"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/utils": "^4.11.2",
     "gatsby": "^2.26.1",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "node-sass": "^5.0.0",
