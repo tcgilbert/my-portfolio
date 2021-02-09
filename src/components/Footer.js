@@ -3,7 +3,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
-import Pdf from '../../public/static/resume.pdf'
+import Pdf from '../assests/img/resume.pdf'
 
 
 const Footer = () => {
