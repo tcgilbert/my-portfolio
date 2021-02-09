@@ -1,0 +1,39 @@
+.footer {
+    height: auto;
+    margin-top: 8rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(0, 179, 210),
+      rgb(51, 13, 164)
+    );
+    text-align: center;
+  }
+  
+  .footer-title {
+    color: #fff;
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    margin: 5rem auto 0;
+    padding-bottom: 5rem;
+  }
+  
+  .icon-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+  
+  .contact-link {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }

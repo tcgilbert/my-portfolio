@@ -3,14 +3,44 @@ import React from "react"
 const Navigation = () => {
   return (
     <div className="navigation">
+      <div>
+        <h1>TG</h1>
+        <input
+          type="checkbox"
+          className="navigation__checkbox"
+          id="navi-toggle"
+        />
+        <label htmlFor="navi-toggle" className="navigation__menu-btn">
+          X
+        </label>
+        <div className="navigation__background"></div>
+      </div>
 
-        <div className="nav-tab-container">
-            <h3 className="nav-tab">About</h3>
-            <h3 className="nav-tab">Projects</h3>
-            <h3 className="nav-tab">Contact</h3>
-            <h3 className="nav-tab">Resume</h3>
-        </div>
 
+      <nav className="navigation__nav">
+        <ul className="navigation__list">
+          <li className="navigation__item">
+            <a href="#" className="navigation__link">
+              About
+            </a>
+          </li>
+          <li className="navigation__item">
+            <a href="#" className="navigation__link">
+              Projects
+            </a>
+          </li>
+          <li className="navigation__item">
+            <a href="#" className="navigation__link">
+              Contact
+            </a>
+          </li>
+          <li className="navigation__item">
+            <a href="#" className="navigation__link">
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }

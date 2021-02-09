@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { Link } from "gatsby"
 const Projects = () => {
 
 
     const kscopeRedirect = () => {
-        window.open("https://kaleidoscope-budget.herokuapp.com/", "_blank")
+        window.open("")
+        // window.open("https://kaleidoscope-budget.herokuapp.com/", "_blank")
     }
 
     const thinkeweRedirect = () => {
@@ -22,18 +23,18 @@ const Projects = () => {
                     <h1 className="projects-heading">Featured Projects</h1>
                     <hr className="about-hr"/>
                 </div>
-                <div onClick={kscopeRedirect} className="kaleidoscope" data-sal-duration="700" data-sal="slide-up">
+                <Link to="/kaleidoscope" className="kaleidoscope" data-sal-duration="700" data-sal="slide-up">
                     <h1 className="project-title">Kaleidoscope</h1>
                     <p className="project-text">React | Node | MongoDB | Express </p>
-                </div>
-                <div onClick={thinkeweRedirect} className="think-ewe" data-sal-duration="700" data-sal="slide-up">
+                </Link>
+                <Link to="/think-ewe" className="think-ewe" data-sal-duration="700" data-sal="slide-up">
                     <h1 className="project-title">Think Ewe</h1>
                     <p className="project-text">React | Node | PostgreSQL | Express </p>
-                </div>
-                <div onClick={sauceRedirect} className="rocket-sauce" data-sal-duration="700" data-sal="slide-up">
+                </Link>
+                <Link to="/rocket-sauce" className="rocket-sauce" data-sal-duration="700" data-sal="slide-up">
                     <h1 className="project-title">Rocket Sauce</h1>
                     <p className="project-text">Vanilla JS | HTML5 Canvas | Adobe PS</p>
-                </div>
+                </Link>
             </div>
         </div>
     )
