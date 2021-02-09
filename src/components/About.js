@@ -11,8 +11,8 @@ const About = () => {
                     <div data-sal-duration="700" data-sal="slide-left">
                         <h1 className="about-header">I'm a full-stack developer who finds enjoyment in all things creative.</h1>
                         <hr className="about-hr"/>
-                        <p className="about-text">My favorite moment is when what feels like hours wasted culminates into something new and original. Fortunately, these moments are plentiful in the world of programming.</p>
-                        <p className="about-text">After having spent the year of 2020 as a full-time learner, I am actively seeking employment as of Feburary 2021. When I am not coding, you can find me either playing music (mostly bluegrass), or spending time outside in the sun.</p>
+                        <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perferendis tenetur deleniti illum molestiae quisquam ab corporis facere officia placeat provident nobis, blanditiis aut corrupti consequuntur totam, accusamus eveniet voluptatum!</p>
+                        <p className="about-text">When I am not coding, you can find me either playing music, or spending time out in the sun.</p>
                     </div>
                 </div>
                 <div className="skills-container">
