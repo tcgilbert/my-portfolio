@@ -124,7 +124,10 @@
   animation: moveInRight 1s ease-out; }
 
 .arrow-btn {
-  margin-top: 7rem;
+  margin-top: 5rem;
+  position: relative;
+  width: inherit;
+  height: 5rem;
   animation: oscilate 3s infinite linear;
   transition: all 0.3s; }
 
@@ -132,6 +135,13 @@
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.091);
   border-radius: 100%; }
+
+.down-arrow {
+  position: absolute;
+  top: -6rem;
+  left: 54%;
+  transform: translateX(-50%, -50%);
+  font-size: 8rem; }
 
 .about-container {
   position: relative;
