@@ -1,6 +1,6 @@
 
 import { Link } from "gatsby"
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Pdf from "../assests/img/resume.pdf"
 import MenuIcon from "@material-ui/icons/Menu"
 
