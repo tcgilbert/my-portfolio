@@ -2,6 +2,7 @@ import React from "react"
 import Navigation from "../components/Navigation"
 import AbbrevFooter from "../components/AbbrevFooter"
 import TePreview from "../assests/img/te_preview.png"
+import OtherProjects from "../components/OtherProjects"
 
 const kaleidoscope = () => {
     return (
@@ -65,6 +66,7 @@ const kaleidoscope = () => {
           </div>
         </div>
       </div>
+      <OtherProjects />
       <AbbrevFooter />
         </div>
     )
