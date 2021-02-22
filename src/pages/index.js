@@ -49,10 +49,10 @@ export default class Home extends Component {
       <div>
         <div id="top"></div>
         <Navigation />
-
         <Header/>
         <div id="about-anchor"></div>
         <About />
+        <div id="spacer"></div>
         <Projects />
         <Footer />
       </div>

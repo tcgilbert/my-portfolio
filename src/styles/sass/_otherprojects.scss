@@ -1,26 +1,15 @@
-.projects-section {
-  height: auto;
-  margin-top: 14rem;
-}
+
 
 .projects-container-other {
-  width: 90%;
-  margin: 8rem auto 15rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "heading heading heading" "project1 project2 project3";
-  column-gap: 2rem;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
-.projects-heading {
-  grid-area: heading;
-  font-size: 3rem;
-}
-
-.think-ewe {
-  margin-top: 2rem;
-  grid-area: project2;
+.think-ewe-other {
+  margin: 1rem 1rem;
+  width: auto;
   text-align: center;
   color: rgb(53, 53, 53);
   z-index: 1;
@@ -34,24 +23,26 @@
     ),
     url("../../assests/img/sheep2.png");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
+  transition: all .3s;
 }
 
-.think-ewe:hover {
+.think-ewe-other:hover {
   cursor: pointer;
   transform: translateY(-0.5rem);
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
 }
 
-.think-ewe:active {
+.think-ewe-other:active {
   cursor: pointer;
   transform: translateY(0);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.kaleidoscope {
-  margin-top: 2rem;
-  grid-area: project1;
+.kaleidoscope-other {
+  margin: 1rem 1rem;
+  width: auto;
+  grid-area: project2;
   text-decoration: none;
   text-align: center;
   color: #fff;
@@ -67,23 +58,56 @@
     url("../../assests/img/rainbow.jpg");
   background-size: cover;
   background-position: bottom;
+  transition: all .3s;
 }
 
-.kaleidoscope:hover {
+.kaleidoscope-other:hover {
   cursor: pointer;
   transform: translateY(-0.5rem);
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
 }
 
-.kaleidoscope:active {
+.kaleidoscope-other:active {
   cursor: pointer;
   transform: translateY(0);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.rocket-sauce {
-  margin-top: 2rem;
-  grid-area: project3;
+.thesedays-other {
+  margin: 1rem 1rem;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  padding: 6rem;
+  border-radius: 0.5rem;
+  background-color: rgba(13, 255, 0, 0.666);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url("../../assests/img/these_days.jpg");
+  background-size: cover;
+  background-position: top;
+  transition: all .3s;
+}
+
+.thesedays-other:hover {
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
+}
+
+.thesedays-other:active {
+  cursor: pointer;
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.rocket-sauce-other {
+  margin: 1rem 1rem;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -97,24 +121,18 @@
     ),
     url("../../assests/img/rocket-sauce2.png");
   background-size: cover;
+  background-position: bottom;
+  transition: all .3s;
 }
 
-.rocket-sauce:hover {
+.rocket-sauce-other:hover {
   cursor: pointer;
   transform: translateY(-0.5rem);
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
 }
 
-.rocket-sauce:active {
+.rocket-sauce-other:active {
   cursor: pointer;
   transform: translateY(0);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.project-title {
-  font-size: 4rem;
-}
-
-.project-text {
-  font-size: 1.5rem;
 }

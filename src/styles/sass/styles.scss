@@ -36,6 +36,10 @@ body {
   position: relative;
 }
 
+#spacer {
+  height: 5rem;
+}
+
 @media (max-width: 1400px) {
   html {
     font-size: 59%;
@@ -52,6 +56,8 @@ body {
 }
 
 @media (max-width: 1270px) {
+
+
   .project-title {
     font-size: 3rem;
   }
@@ -74,6 +80,11 @@ body {
 }
 
 @media (max-width: 1070px) {
+
+  .projects-heading {
+    left: 6rem;
+  }
+
   .projects-container {
     display: flex;
     flex-direction: column;
@@ -105,6 +116,14 @@ body {
   .project__container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .projects-container-other {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .project__title {

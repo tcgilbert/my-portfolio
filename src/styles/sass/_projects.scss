@@ -1,27 +1,32 @@
 
 .projects-section {
     height: auto;
-    margin-top: 14rem;
+    margin-top: 20rem;
+    position: relative;
   }
   
   .projects-container {
     width: 85%;
     margin: 8rem auto 15rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "heading heading heading" "project1 project2 project3";
-    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: "project1 project2" "project3 project4";
   }
   
   .projects-heading {
-    grid-area: heading;
+    position: absolute;
+    top: -10rem;
+    left: 10rem;
+  }
+
+  .heading-text {
     font-size: 3rem;
   }
   
   .think-ewe {
-    margin-top: 2rem;
-    grid-area: project2;
+    grid-area: project3;
     text-align: center;
     color: rgb(53, 53, 53);
     z-index: 1;
@@ -35,7 +40,8 @@
       ),
       url("../../assests/img/sheep2.png");
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
+    transition: all .3s;
   }
   
   .think-ewe:hover {
@@ -51,8 +57,7 @@
   }
   
   .kaleidoscope {
-    margin-top: 2rem;
-    grid-area: project1;
+    grid-area: project2;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -68,6 +73,7 @@
       url("../../assests/img/rainbow.jpg");
     background-size: cover;
     background-position: bottom;
+    transition: all .3s;
   }
   
   .kaleidoscope:hover {
@@ -82,9 +88,40 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
   
+  .thesedays {
+    grid-area: project1;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding: 6rem;
+    border-radius: 0.5rem;
+    background-color: rgba(13, 255, 0, 0.666);
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15)
+      ),
+      url("../../assests/img/these_days.jpg");
+    background-size: cover;
+    background-position: top;
+    transition: all .3s;
+  }
+  
+  .thesedays:hover {
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.23);
+  }
+  
+  .thesedays:active {
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
   .rocket-sauce {
-    margin-top: 2rem;
-    grid-area: project3;
+    grid-area: project4;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -98,6 +135,8 @@
       ),
       url("../../assests/img/rocket-sauce2.png");
     background-size: cover;
+    background-position: bottom;
+    transition: all .3s;
   }
   
   .rocket-sauce:hover {

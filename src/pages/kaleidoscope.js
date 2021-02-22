@@ -70,7 +70,7 @@ const kaleidoscope = () => {
           </div>
         </div>
       </div>
-      <OtherProjects />
+      <OtherProjects page="scope" />
       <AbbrevFooter />
     </div>
   )

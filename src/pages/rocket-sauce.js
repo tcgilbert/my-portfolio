@@ -53,7 +53,7 @@ const kaleidoscope = () => {
           </div>
         </div>
       </div>
-      <OtherProjects />
+      <OtherProjects page="rocket"/>
       <AbbrevFooter />
     </div>
   )
