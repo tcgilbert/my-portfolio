@@ -16,12 +16,12 @@ const thesedays = () => {
             alt="Project Preview"
           />
           <div>
-            <h1 className="project__title">These Days (work in progress)</h1>
+            <h1 className="project__title">These Days</h1>
             <h1 className="project__subtitle">Mobile Website Generator</h1>
             <hr className="about-hr" />
             <p className="project__text">
               <span className="project__subsection">About: </span>
-              Best described as linktr.ee but for sharing more than just links.
+              Linktr.ee but for sharing more than just links.
             </p>
             <p className="project__text">
               <span className="project__subsection">Technologies: </span>
@@ -32,7 +32,27 @@ const thesedays = () => {
               Spotify API, Google Books API
             </p>
             <p className="project__text">
-              <span className="project__subsection">Deployment: </span>TBD
+              <span className="project__subsection">Deployment: </span>Heroku
+            </p>
+            <p className="project__text">
+              <span className="project__subsection">Live Site: </span>
+              <a
+                className="project__link"
+                href="https://www.thesedays.io/"
+                target="_blank"
+              >
+                These Days
+              </a>
+            </p>
+            <p className="project__text">
+              <span className="project__subsection">My Link: </span>
+              <a
+                className="project__link"
+                href="https://www.thesedays.io/thomas"
+                target="_blank"
+              >
+                thesedays.io/thomas
+              </a>
             </p>
             <p className="project__text">
               <span className="project__subsection">Front-end Repo: </span>

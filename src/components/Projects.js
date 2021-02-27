@@ -26,7 +26,6 @@ const Projects = () => {
                 <Link to="/thesedays" className="thesedays">
                     <h1 className="project-title">These Days</h1>
                     <p className="project-text">React | Node | PostgreSQL | Express </p>
-                    <p className="project-text">(current project)</p>
                 </Link>
                 <Link to="/kaleidoscope" className="kaleidoscope">
                     <h1 className="project-title">Kaleidoscope</h1>
@@ -40,22 +39,6 @@ const Projects = () => {
                     <h1 className="project-title">Rocket Sauce</h1>
                     <p className="project-text">Vanilla JS | HTML5 Canvas | Adobe PS</p>
                 </Link>
-                {/* <Link to="/rocket-sauce" className="thesedays" data-sal-duration="700" data-sal="slide-up">
-                    <h1 className="project-title">These Days</h1>
-                    <p className="project-text">React | Node | PostgreSQL | Express </p>
-                </Link>
-                <Link to="/kaleidoscope" className="kaleidoscope" data-sal-duration="700" data-sal="slide-up">
-                    <h1 className="project-title">Kaleidoscope</h1>
-                    <p className="project-text">React | Node | MongoDB | Express </p>
-                </Link>
-                <Link to="/think-ewe" className="think-ewe" data-sal-duration="700" data-sal="slide-up">
-                    <h1 className="project-title">Think Ewe</h1>
-                    <p className="project-text">React | Node | PostgreSQL | Express </p>
-                </Link>
-                <Link to="/rocket-sauce" className="rocket-sauce" data-sal-duration="700" data-sal="slide-up">
-                    <h1 className="project-title">Rocket Sauce</h1>
-                    <p className="project-text">Vanilla JS | HTML5 Canvas | Adobe PS</p>
-                </Link> */}
             </div>
         </div>
     )
